@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแนะนำผลงาน</title>
+    <!-- ลิงก์ CDN Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* ปรับขนาดของภาพใน Carousel */
+        .carousel-item img {
+            width: 100%; /* กำหนดให้ภาพมีความกว้าง 100% ของ container */
+            height: 400px; /* กำหนดความสูงของภาพ */
+            object-fit: cover; /* ให้ภาพไม่ถูกบีบหรือยืดจนเกินไป */
+        }
+        .body {
+    background-image: url('BG.jpg'); /* ใส่ชื่อไฟล์ของรูปภาพ */
+    background-size: cover; /* ปรับขนาดรูปให้พอดีกับหน้าจอ */
+    background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */
+    background-attachment: fixed; /* ให้รูปติดอยู่กับตำแหน่ง */
+    background-position: center; /* จัดรูปไว้ตรงกลาง */
+}
+
+    </style>
+</head>
+<body style="background-color: black;">
+    
+    <!-- ส่วนที่ 1: Hero Section -->
+    <section id="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="free.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 style="font-size: 90px; text-shadow: rgb(0, 0, 0) -2px 1px 12px;">Graphics</h1>
+                        <p style="font-size: 40px; text-shadow: rgb(0, 0, 0) -2px 1px 12px;">Photoshop,Illustrator</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="portrait.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 90px; text-shadow: rgb(0, 0, 0) -2px 1px 12px;">Cameraman</h5>
+                        <p style="font-size: 40px; text-shadow: rgb(0, 0, 0) -2px 1px 12px;">Sports,Various Tasks,Live Broadcast</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="sound.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 90px; text-shadow: rgb(0, 0, 0) -2px 1px 12px;">Live broadcast control</h5>
+                        <p style="font-size: 40px; text-shadow: rgb(0, 0, 0) -2px 1px 12px;">Control Images, Sound And Advertising</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ส่วนที่ 3: Portfolio Section -->
+    <section id="portfolio" class="container my-5">
+        <h2 class="text-center mb-5" style="color: yellow;">Education Background And Performance</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="KKC.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน</h5>
+                        <p class="card-text">Rajamangala University Of Technology Isan Khon Kaen Campus</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="BIS.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">คณะบริหารธุรกิจ</h5>
+                        <p class="card-text">สาขาเทคโนโลยีสารสนเทศทางคอมพิวเตอร์</p><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="244.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">เกรดเฉลี่ยสะสม</h5>
+                        <p class="card-text">ณ ตอนนั้นยอมรับว่าไม่ตั้งใจเองเลยได้แค่นี้</p><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="work1.jpg" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">ทำงานร่วมกับคุณอิชิตัน</h5>
+                        <p class="card-text">ในการถ่ายทอดสดการขันแข่งไก่ชนของประเทศ</p><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="work2.jpg" class="card-img-top" alt="Project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">เครื่องมือliveStream</h5>
+                        <p class="card-text">ผมจะเป็นคนควบคุมภาพจากกล้อง,เสียงจากนักพากษ์ และโฆษณาต่างๆ</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="work3.jpg" class="card-img-top" alt="Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title">โลโก้งานเก่าที่ทำ</h5>
+                        <p class="card-text">งานเก่าผมมันแย่เพราะมันสีเทาข้อมูลบางอย่างเปิดเผยไม่ได้ ผมอยากเริ่มต้นใหม่กับสิ่งที่ผมจบมา</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ส่วนที่ 4: Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">ติดต่อเรา</h2>
+            <p class="text-center mb-4">ผมชื่อเล่น เอิร์ธ ครับ ทำงานประจำมา 2 ปี และก็ลาออกมาทำค้าขายตอนนี้ก็อายุ  25 ปีเต็มแล้ว อยากลองใช้สายที่เรียนมาเริ่มทำงานเกี่ยวกับการสร้างเว็บไซต์ครับ ผมชอบออกแบบครับ ถึงไม่เก่งแต่พร้อมเรียนรู้เพิ่มเติมเสมอครับ</p>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h5>อีเมล</h5>
+                    <p>emanjiiz@hotmail.com</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>โทรศัพท์</h5>
+                    <p>064-885-9217</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>โซเชียลมีเดีย</h5>
+                    <p>
+                        <a href="https://www.facebook.com/jedsadakorn.maniro" class="text-decoration-none">Facebook</a> | 
+                        <a href="https://www.instagram.com/elix1998/" class="text-decoration-none">Instagram</a> | 
+                        <a href="https://line.me/ti/p/SO-KULqZSo" class="text-decoration-none">Line</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ลิงก์ CDN Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
